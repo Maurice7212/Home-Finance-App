@@ -1,0 +1,19 @@
+body {
+    background-color: #121212;
+    color: #E0E0E0;
+    font-family: 'Arial', sans-serif;
+}
+
+.progress-container {
+    width: 100%;
+    background-color: #2E2E2E;
+    border-radius: 5px;
+}
+
+.progress-bar {
+    height: 24px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 24px;
+    color: #FFFFFF;
+}

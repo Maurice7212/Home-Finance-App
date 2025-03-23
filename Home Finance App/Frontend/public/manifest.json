@@ -1,0 +1,15 @@
+{
+    "short_name": "FinanceApp",
+    "name": "Finance Management App",
+    "icons": [
+        {
+            "src": "/icons/icon-192x192.png",
+            "type": "image/png",
+            "sizes": "192x192"
+        }
+    ],
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#121212",
+    "theme_color": "#4CAF50"
+}

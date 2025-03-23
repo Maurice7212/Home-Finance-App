@@ -1,0 +1,79 @@
+/* Light Theme */
+body {
+    background-color: #f0f2f5;
+    color: #333;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Dark Theme */
+body.dark {
+    background-color: #121212;
+    color: #f0f2f5;
+}
+
+.auth-container,
+.dashboard-container {
+    background-color: #fff;
+    color: #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+body.dark .auth-container,
+body.dark .dashboard-container {
+    background-color: #1e1e1e;
+    color: #fff;
+}
+
+/* Theme Toggle Switch */
+.theme-toggle {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 15px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 34px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+}
+
+.slider::before {
+    position: absolute;
+    content: '';
+    height: 14px;
+    width: 14px;
+    left: 3px;
+    bottom: 3px;
+    background-color: #fff;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+input:checked + .slider {
+    background-color: #4caf50;
+}
+
+input:checked + .slider::before {
+    transform: translateX(14px);
+}

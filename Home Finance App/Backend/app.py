@@ -1,5 +1,5 @@
 from flask import Flask, jsonify, request  # Added `request` import
-from utils.helpers import some_helper_function  # Adjust based on actual functions
+from utils.helpers import calculate_tax, format_currency  # Adjust based on actual functions
 from utils.tax_slabs import calculate_tax
 from utils.auth_utils import authenticate_user
 from config import Config
